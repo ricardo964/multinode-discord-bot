@@ -4,7 +4,7 @@ const {token} = require('../config.json');
 
 const manager = new ShardingManager(path.join(__dirname,'app.js'), { token: token });
 
-async function main(){
+function main(){
     manager.on('shardCreate', shard => console.log(`Launched shard ${shard.id}`));
     manager.spawn();
 }
