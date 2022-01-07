@@ -1,0 +1,23 @@
+{
+  "name": "botdiscord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "deploy-commands": "node deploy-commands.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^0.11.0",
+    "@discordjs/rest": "^0.2.0-canary.0",
+    "discord-api-types": "^0.26.1",
+    "discord.js": "^13.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
